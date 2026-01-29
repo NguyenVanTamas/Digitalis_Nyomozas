@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Digitalis_Nyomozas
 {
-	internal class CaseStatus
+	internal class CaseManager
 	{
 
 	}
