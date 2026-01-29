@@ -8,6 +8,6 @@ namespace Digitalis_Nyomozas
 {
 	internal class CaseStatus
 	{
-
+		
 	}
 }
