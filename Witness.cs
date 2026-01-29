@@ -10,9 +10,9 @@ namespace Digitalis_Nyomozas
 	{
 		private Person person;
 		private string testimony;
-		private string testimony_date;
+		private DateTime testimony_date;
 
-		public Witness(Person person, string testimony, string testimony_date)
+		public Witness(Person person, string testimony, DateTime testimony_date)
 		{
 			this.person = person;
 			this.testimony = testimony;
@@ -20,7 +20,7 @@ namespace Digitalis_Nyomozas
 		}
 
 		public string Testimony { get => testimony; set => testimony = value; }
-		public string Testimony_date { get => testimony_date; set => testimony_date = value; }
+		public DateTime Testimony_date { get => testimony_date; set => testimony_date = value; }
 		internal Person Person { get => person; set => person = value; }
 	}
 }
