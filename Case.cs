@@ -31,5 +31,25 @@ namespace Digitalis_Nyomozas
 		public string Status { get => status; set => status = value; }
 		internal List<Case> Persons { get => persons; set => persons = value; }
 		internal List<Case> Evidences { get => evidences; set => evidences = value; }
+
+		public void CaseStatus()
+		{
+			string status = this.Status;
+			bool valid = false;
+            Console.WriteLine($"Status of selected case: {status}.");
+			Console.Write("Change status of selected case to (Open/On-going/Closed): ");
+			while (!valid){
+				status = Console.ReadLine();
+				if (status != "Open" || status != "On-going" || status != "Closed")
+				{
+                    Console.WriteLine("Incorrect status type");
+				}
+				else
+				{
+                    Console.WriteLine($"Successfully changed status of selected case to: {status}.");
+					valid = true;
+				}
+			}
+		}
 	}
 }
