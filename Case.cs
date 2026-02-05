@@ -46,7 +46,8 @@ namespace Digitalis_Nyomozas
 				}
 				else
 				{
-                    Console.WriteLine($"Successfully changed status of selected case to: {status}.");
+					this.Status = status;
+					Console.WriteLine($"Successfully changed status of selected case to: {status}.");
 					valid = true;
 				}
 			}

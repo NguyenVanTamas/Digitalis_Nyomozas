@@ -25,10 +25,5 @@ namespace Digitalis_Nyomozas
 		public string Type { get => type; set => type = value; }
 		public string Description { get => description; set => description = value; }
 		public string Credibility { get => credibility; set => credibility = value; }
-
-		public void EvidenceManager()
-		{
-
-		}
 	}
 }
