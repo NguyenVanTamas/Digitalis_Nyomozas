@@ -2,6 +2,7 @@
 {
     internal class Program
     {
+		List<>
 		static void EvidenceManager()
 		{
 			string choice = string.Empty;
@@ -30,9 +31,16 @@
 					string description = Console.ReadLine();
 					Console.Write("Credibility: ");
 					string credibility = Console.ReadLine();
-					Evidence  = new Evidence(id, type, description, credibility);
+					Evidence newEvidence = new Evidence(id, type, description, credibility);
 					break;
+
+				case "Delete":
+
 			}
+		}
+		static void CaseManager()
+		{
+
 		}
 		static void Main(string[] args)
         {
